@@ -599,13 +599,12 @@ Click Attach
 
 After attachment, SSH into the 1b instance:
 
-1[connect to 1b](Method1_Recovery_Server/screenshots/connect_to_1b.png)     
+![connect to 1b](Method1_Recovery_Server/screenshots/connect_to_1b.png)     
 
 3️⃣ Check Block Devices
-lsblk
 
 You should see:
-![lsblk](Method1_Recovery_Server/screenshot/lsblk_command_1b.png)
+![lsblk](Method1_Recovery_Server/s/lsblk_command_1b.png)
 
 
 1️⃣ Understanding lsblk output

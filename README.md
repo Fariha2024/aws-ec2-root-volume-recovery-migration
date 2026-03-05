@@ -179,7 +179,7 @@ At the top menu click:
 Actions → Create Snapshot
 
 📸 Screenshot Required:
-![creatw snapshot](Method1_Recovery_Server/screenshots\05_create_snapshot.png)
+![creatw snapshot](Method1_Recovery_Server/screenshots/05_create_snapshot.png)
 
 
 3️⃣ Fill Snapshot Details
@@ -336,7 +336,7 @@ These are equivalent. Linux will still show them as /dev/xvdf.
 After attaching, go back to Volumes page.
 
 📸 Screenshot Required:
-![attach volume](Method1_Recovery_Server\screenshots\details_attach_volume_page.png)
+![attach volume](Method1_Recovery_Server/screenshots/details_attach_volume_page.png)
 
 ✅ STEP 9 – Mount & Verify
 lsblk
@@ -513,7 +513,7 @@ Button is at the top-right.
 5. Click “Create Volume from snapshot”
 
 📸 Screenshot Required:
-![create volume from snapshot](Method1_Recovery_Server/screenshots\create_volume_from_snapshot.png)
+![create volume from snapshot](Method1_Recovery_Server/screenshots/create_volume_from_snapshot.png)
 
 
 4. Fill the Volume Details
@@ -526,7 +526,7 @@ IOPS / Throughput	Keep default (or same as original)
 Encryption	Keep same as snapshot (if unencrypted, leave unchecked)
 
 
- ![create volume ](Method1_Recovery_Server/screenshots\details_create_volume_page-ap_south_1b.png)
+ ![create volume ](Method1_Recovery_Server/screenshots/details_create_volume_page-ap_south_1b.png)
 
 
 ✅ Where to see the new volume
@@ -543,7 +543,7 @@ Encryption	Keep same as snapshot (if unencrypted, leave unchecked)
 
 . Status: Available (not attached yet)
 
-![volume created in 1b](Method1_Recovery_Server/screenshots\volume_created_in_1b.png
+![volume created in 1b](Method1_Recovery_Server/screenshots/volume_created_in_1b.png
 )
 ✅ STEP 11 – Attach to EC2 in 1b
 
@@ -570,7 +570,7 @@ Click Launch
 
 Wait until instance state = running.
 
-![volume created in 1b](Method1_Recovery_Server/screenshots\instance_launched_1b_successfully.png)
+![volume created in 1b](Method1_Recovery_Server/screenshots/instance_launched_1b_successfully.png)
 
 ✅ STEP 11b – Attach Volume to New EC2 in 1b
 
@@ -580,7 +580,7 @@ Select the snapshot-created volume in ap-south-1b
 
 Actions → Attach Volume
 
-![attach volume 1b](Method1_Recovery_Server\screenshots\attach_volume_1b.png)
+![attach volume 1b](Method1_Recovery_Server/screenshots/attach_volume_1b.png)
 
 
 Details Page:
@@ -591,7 +591,7 @@ Device name: /dev/sdf (AWS will map it automatically)
 Click Attach
 
 📸 Screenshot Required:
-![details attach volume page 1b](Method1_Recovery_Server\screenshots\details_attach_volume_page_1b.png)
+![details attach volume page 1b](Method1_Recovery_Server/screenshots/details_attach_volume_page_1b.png)
 
 
 
@@ -599,13 +599,13 @@ Click Attach
 
 After attachment, SSH into the 1b instance:
 
-1[connect to 1b](Method1_Recovery_Server\screenshots\connect_to_1b.png)     
+1[connect to 1b](Method1_Recovery_Server/screenshots/connect_to_1b.png)     
 
 3️⃣ Check Block Devices
 lsblk
 
 You should see:
-![lsblk](Method1_Recovery_Server\screenshots\lsblk_command_1b.png)
+![lsblk](Method1_Recovery_Server/screenshot/lsblk_command_1b.png)
 
 
 1️⃣ Understanding lsblk output
@@ -646,7 +646,7 @@ Expected output:
 This file is created in ap-south-1a.
 Recovery test file.
 
-![mount verify](Method1_Recovery_Server\screenshots\mount_verify_1b.png)
+![mount verify](Method1_Recovery_Server/screenshots/mount_verify_1b.png)
 
 ✅ After this, your STEP 12 verification is complete.
 

@@ -604,7 +604,7 @@ After attachment, SSH into the 1b instance:
 3️⃣ Check Block Devices
 
 You should see:
-![lsblk](Method1_Recovery_Server/s/lsblk_command_1b.png)
+![lsblk](Method1_Recovery_Server/screenshots/lsblk_command_1b.png)
 
 
 1️⃣ Understanding lsblk output

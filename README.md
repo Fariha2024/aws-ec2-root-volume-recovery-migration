@@ -688,6 +688,60 @@ cat migration_test.txt
 📸 Screenshot Required:
 ![mount verify 1b](Method1_Recovery_Server/screenshots/mount_verify_1b.png)
 
+✅ After this, your STEP 12 verification is complete.
+
+
+
+🧭 METHOD 2 – STEP BY STEP GUIDE
+
+(Direct Snapshot Migration)
+
+✅ STEP 1 – Launch EC2 in 1a
+
+📸 Screenshot Required:
+01_launch_instance_1a.png
+
+✅ STEP 2 – Create Migration File
+cd /home/ec2-user
+sudo nano migration_test.txt
+
+📸 Screenshot Required:
+02_create_file.png
+
+✅ STEP 3 – Verify File
+ls
+cat migration_test.txt
+
+📸 Screenshot Required:
+03_verify_file.png
+
+✅ STEP 4 – Create Snapshot
+
+📸 Screenshot Required:
+04_create_snapshot.png
+
+✅ STEP 5 – Create Volume in 1b
+
+From Snapshot → Create Volume → AZ = 1b
+
+📸 Screenshot Required:
+05_create_volume_1b.png
+
+✅ STEP 6 – Attach to EC2 in 1b
+
+📸 Screenshot Required:
+06_attach_volume_1b.png
+
+✅ STEP 7 – Mount & Verify
+sudo mkdir /mnt/migrated
+sudo mount /dev/xvdf1 /mnt/migrated
+cd /mnt/migrated/home/ec2-user
+ls
+cat migration_test.txt
+
+📸 Screenshot Required:
+07_mount_verify.png
+
 🏁 FINAL RESULT
 
 After completing both methods:
@@ -699,3 +753,4 @@ After completing both methods:
 ✔ Data verified again
 
 Assignment Complete ✅
+
